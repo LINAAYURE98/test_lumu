@@ -1,0 +1,10 @@
+@use "../../base/variables" as var; 
+
+.footer{
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+   &__text {
+    font-size: 14px;
+    color: #8392AB;
+   }
+}

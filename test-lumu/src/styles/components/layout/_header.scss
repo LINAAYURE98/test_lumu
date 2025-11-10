@@ -1,0 +1,24 @@
+@use "../../base/variables" as var;
+
+.header {
+  align-items: center;
+  gap: 0;
+  
+  &__title{
+    color: var.$color-body;
+    font-family: var.$OpenSans-regular;
+    background-color: var.$color-primary;
+    padding: 24px 48px;
+    size: 18px;
+    span{
+      color:#FFFFFF99;
+    }
+  }
+  &__subtitle{
+    color: #525F7F;
+    font-family: var.$OpenSans-regular;
+    background-color: var.$color-gray;
+    height: 50px;
+    padding: 16px 48px;
+  }
+}
