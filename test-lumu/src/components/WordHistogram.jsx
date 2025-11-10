@@ -24,16 +24,17 @@ function WordHistogram_impl({ frequencies = [] }) {
               margin={{ top: 10, right: 30, left: 0, bottom: 5 }}
               className="word-chart__bar-chart"
             >
-              <CartesianGrid strokeDasharray="3 3" className="word-chart__grid" />
-              <XAxis dataKey="name" className="word-chart__axis word-chart__axis--x" />
-              <YAxis className="word-chart__axis word-chart__axis--y" />
+              <CartesianGrid vertical={false} strokeDasharray="3 3" className="word-chart__grid" />
+              <XAxis dataKey="name" className="word-chart__axis word-chart__axis--x"  axisLine={{ stroke: '#E0E0E0' }} tick={{ fill: "#212529", fontSize: 14 }}
+            dy={10}/>
+              <YAxis className="word-chart__axis word-chart__axis--y" axisLine={{ stroke: '#E0E0E0' }} tick={{ fill: "#CED4DA", fontSize: 14 }}/>
               <Tooltip
                 cursor={{ fill: "rgba(0,0,0,0.05)" }}
                 wrapperClassName="word-chart__tooltip"
               />
               <Bar
                 dataKey="value"
-                fill="#1d1e2c"
+                fill="#172B4D"
                 barSize={30}
                 className="word-chart__bar"
               />
@@ -42,7 +43,7 @@ function WordHistogram_impl({ frequencies = [] }) {
         ) : (
           <div className="word-chart__empty">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png"
+              src="/img/icon-documentation.png"
               alt="Empty chart illustration"
               className="word-chart__empty-img"
             />

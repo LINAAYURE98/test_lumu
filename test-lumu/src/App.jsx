@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header_impl from "./components/layout/Header";
+import Footer_impl from "./components/layout/Footer";
 import DataSourcePanel_impl from "./components/DataSourcePanel";
 import WordHistogram_impl from "./components/WordHistogram";
 import WordTable_impl from "./components/WordTable";
@@ -14,19 +16,15 @@ function App_impl() {
 
   return (
     <div className="app">
-      <header className="header">
-        <h1 className="header__title">Test / Front</h1>
-        <p className="header__subtitle">
-          Generate texts from one data source and obtain the most repeated words
-          to graph them and place them in a list.
-        </p>
-      </header>
+      <Header_impl />
 
       <main className="main">
         <DataSourcePanel_impl onDataFetched={handleDataFetched} />
         <WordHistogram_impl frequencies={frequencies} />
         <WordTable_impl frequencies={frequencies} />
       </main>
+
+      <Footer_impl />
     </div>
   );
 } // Root app!!!

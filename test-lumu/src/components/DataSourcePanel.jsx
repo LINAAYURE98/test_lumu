@@ -68,13 +68,13 @@ const handleGenerate = async () => {
         </div>
 
         <label className="data-source__checkbox">
+          <span className="data-source__checkbox-label">Start with lorem</span>
           <input
             type="checkbox"
             checked={startWithLorem}
             onChange={() => setStartWithLorem(!startWithLorem)}
             className="data-source__checkbox-input"
           />
-          <span className="data-source__checkbox-label">Start with lorem</span>
         </label>
 
         <button
@@ -90,10 +90,12 @@ const handleGenerate = async () => {
           <strong className="data-source__stat-title">Words</strong>
           <p className="data-source__stat-value">{stats.words}</p>
         </div>
+        <hr className="divider"></hr>
         <div className="data-source__stat">
           <strong className="data-source__stat-title">Characters</strong>
           <p className="data-source__stat-value">{stats.chars}</p>
         </div>
+        <hr className="divider"></hr>
         <div className="data-source__stat">
           <strong className="data-source__stat-title">Paragraphs</strong>
           <p className="data-source__stat-value">{stats.paras}</p>

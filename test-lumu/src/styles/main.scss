@@ -1,0 +1,11 @@
+@use "base/variables";
+@use "base/reset";
+@use "base/fonts";
+
+@use "components/layout/header";
+@use "components/layout/footer";
+
+@use "components/dataSourcePanel";
+@use "components/wordHistogram";
+@use "components/wordTable";
+

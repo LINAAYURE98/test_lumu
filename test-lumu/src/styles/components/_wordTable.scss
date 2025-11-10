@@ -1,0 +1,74 @@
+@use "../base/variables" as var;
+
+.word-table {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var.$color-body;
+  border-radius: 15px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+  font-family: var.$OpenSans-regular;
+  color: var.$color-text;
+  overflow-x: auto;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var.$color-text;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  &__content {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+
+  &__row {
+
+    &:hover {
+      background-color: #f3f4f6;
+    }
+  }
+
+  &__cell--head {
+    padding: 0.9rem 1.2rem;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8392AB;
+    border-bottom: 2px solid var.$color-text;
+  }
+
+  &__cell {
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid var.$color-text;
+    font-size: 14px;
+    line-height: 1.5;
+
+    &--rank {
+      width: 33.3%;
+      text-align: left;
+      color: #8392AB;
+      font-weight: 500;
+    }
+
+    &--word {
+      text-transform: capitalize;
+      color: var.$color-text;
+      font-weight: 500;
+    }
+
+    &--count {
+      text-align: left;
+      font-weight: 500;
+      color: var.$color-text;
+    }
+
+    &--empty {
+      text-align: center;
+      color: var.$color-text;
+      font-style: italic;
+    }
+  }
+}
