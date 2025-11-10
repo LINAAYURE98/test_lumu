@@ -17,7 +17,7 @@ JavaScript moderno (ES6+)
 
 ## Instalación
 ```bash
-git clone https://github.com/<tu-usuario>/lumu-frontend-test.git
+git clone https://github.com/LINAAYURE98/test_lumu.git
 cd lumu-frontend-test
 npm install
 npm run dev
